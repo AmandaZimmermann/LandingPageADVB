@@ -1,0 +1,53 @@
+:root {
+    --verde-escuro: #28703C;
+    --branco: #FFFFFF;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.cabecalho, .rodape {
+    background-color: var(--verde-escuro);
+    padding: 15px 30px;
+}
+
+.cabecalho__itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.cabecalho__itens__link {
+    color: var(--branco);
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ropape__endereco {
+    color: var(--branco);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.rodape__segundaDivisao {
+    align-items: center;
+    display: flex;
+}
+
+.rodape__telefones {
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
