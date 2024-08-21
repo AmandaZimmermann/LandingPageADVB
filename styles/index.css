@@ -1,10 +1,11 @@
 :root {
     --verde-escuro: #28703C;
     --branco: #FFFFFF;
+    --font-inter: "Inter", sans-serif;
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-inter)
 }
 
 .cabecalho, .rodape {
@@ -18,15 +19,52 @@ body {
     justify-content: space-between;
 }
 
+.logo_ADVB {
+    width: 200px;
+    margin-right: 3.5em;
+}
 
-.cabecalho__itens__link {
+.cabecalho__links {
+    width: calc(100% - 280.25px - 5em);
+}
+
+.cabecalho__link {
     color: var(--branco);
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
+    margin-right: 1.5em;
 }
 
 .banner {
+    position: relative;
+}
+
+.banner__imagem {
     width: 100%;
+}
+
+.banner__titulo {
+    color: var(--branco);
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 77%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: 1.1em;
+    width: 580px;
+}
+
+.banner__titulo h1{
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner__titulo i {
+    font-style: italic;
+    font-weight: 700;
 }
 
 .rodape {
@@ -37,7 +75,7 @@ body {
 .ropape__endereco {
     color: var(--branco);
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .rodape__segundaDivisao {
@@ -45,9 +83,14 @@ body {
     display: flex;
 }
 
+.logo_Facebook {
+    margin-right: 0.8em;
+}
+
 .rodape__telefones {
     color: var(--branco);
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 1.3em;
+    margin-left: 1.5em;
 }
