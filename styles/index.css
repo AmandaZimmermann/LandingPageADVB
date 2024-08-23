@@ -64,10 +64,11 @@ body {
     width: 580px;
 }
 
-.banner__titulo h1 {
+.banner__titulo strong {
     font-size: 100px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin: 0px 30px;
 }
 
 .banner__titulo i {
@@ -89,7 +90,7 @@ body {
     width: 50%;
 }
 
-.informacoes h1 {
+.informacoes h2 {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 0.8em;
@@ -193,8 +194,64 @@ body {
 }
 
 .botao_voluntario:hover, .botao_cliqueAqui:hover, .botao_vejaMais:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
     transition: 0.3s;
+}
+
+.projetos h2 {
+    color: var(--texto);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+    text-align: center;
+}
+
+.carrossel {
+    height: 200px;
+    position: relative;
+}
+
+.slides {
+    height: 100%;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.projetos li {
+    list-style-type: none;
+}
+
+.projetos button {
+    cursor: pointer;
+}
+
+.botao_direita, .botao_esquerda {
+    color: var(--branco);
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    font-weight: bold;
+    height: 56px;
+    width: 56px;
+}
+
+.botao_esquerda {
+    left: 0;
+}
+
+.botao_direita {
+    right: 0;
 }
 
 .rodape {
