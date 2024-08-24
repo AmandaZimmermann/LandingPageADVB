@@ -200,29 +200,9 @@ body {
 
 .projetos h2 {
     color: var(--texto);
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 700;
-    margin-bottom: 0.8em;
     text-align: center;
-}
-
-.carrossel {
-    height: 200px;
-    position: relative;
-}
-
-.slides {
-    height: 100%;
-}
-
-.slide {
-    height: 100%;
-    width: 100%;
-}
-
-.slide img {
-    height: 100%;
-    width: 100%;
 }
 
 .projetos li {
@@ -233,8 +213,59 @@ body {
     cursor: pointer;
 }
 
+.carousel {
+    display: flex;
+    height: 50vh;
+    justify-content: space-around;
+    margin: 4em;
+    position: relative;
+}
+
+.slides {
+    height: 100%;
+    width: 80%
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.slide img {
+    border-radius: 2em;
+    height: 100%;
+    width: 50vh;
+}
+
+.slide h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.slide[data-active] {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .botao_direita, .botao_esquerda {
-    color: var(--branco);
+    color: var(--texto);
     background-color: transparent;
     border: none;
     position: absolute;

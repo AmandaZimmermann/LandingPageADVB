@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
-    <title>Landing Page ADVB</title>
+    <link rel="" href="index.js">
+    <script src="index.js" async></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -67,20 +68,41 @@
     </div>
     <section id="projetos" class="projetos">
         <h2>Projetos da Associação</h2>
-        <section class="carrossel">
+        <section class="carousel">
             <ul class="slides">
-                <li class="slide">
-                    <img src="assets/imagens/ProjetoRC.png" alt="Imagem do projeto de Reconhecimento de Imagem">
+                <li class="slide fade" data-active>
+                    <div>
+                        <img src="assets/imagens/ProjetoRC.png" alt="Imagem do projeto de Reconhecimento de Imagem">
+                        <h3>Reconhecimento de Imagem</h3>
+                    </div>
+                    <div>
+                        <img src="assets/imagens/ProjetoBengalaEletronica.webp" alt="Imagem do projeto da Bengala Eletrônica">
+                        <h3>Bengala Eletrônica</h3>
+                    </div>
                 </li>
-                <li class="slide">
-                    <img src="assets/imagens/Banner.jpg" alt="Imagem do projeto de Reconhecimento de Imagem">
+                <li class="slide fade">
+                    <div>
+                        <img src="assets/imagens/Exemplo1.png" alt="Exemplo 1">
+                        <h3>Exemplo 1</h3>
+                    </div>
+                    <div>
+                        <img src="assets/imagens/Exemplo2.jpeg" alt="Exemplo 2">
+                        <h3>Exemplo 2</h3>
+                    </div>
                 </li>
-                <li class="slide">
-                    <img src="assets/imagens/ProjetoRC.png" alt="Imagem do projeto de Reconhecimento de Imagem">
+                <li class="slide fade">
+                    <div>
+                        <img src="assets/imagens/Exemplo3.jpeg" alt="Exemplo 3">
+                        <h3>Exemplo 3</h3>
+                    </div>
+                    <div>
+                        <img src="assets/imagens/Exemplo4.png" alt="Exemplo 4">
+                        <h3>Exemplo 4</h3>
+                    </div>
                 </li>
             </ul>
-            <button class="botao_esquerda">&lt;</button>
-            <button class="botao_direita">&gt;</button>
+            <button class="botao_esquerda" data-change-slide-button="esquerda">&lt;</button>
+            <button class="botao_direita" data-change-slide-button="direita">&gt;</button>
         </section>
     </section>
     <footer class="rodape">
